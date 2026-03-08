@@ -5,11 +5,11 @@ import Image from "next/image";
 const IMAGES = [
   "/DSCN6122.png",
   "/DSC09607.JPG",
-  "/DSCN9364.JPG",
-  "/DSCN8881.JPG",
-  "/DSCN3640.JPG",
-  "/DSC07166.png",
-  "/DSCN7406.png",
+  "/Búzios (2).JPG",
+  "/Experimento Hreidi Tubastraea Ago 18 (8).JPG",
+  "/Araruama.JPG",
+  "/cavmar fernandes.JPG",
+  "/DSCN2718 - Maik da Hora.JPG",
   "/foto.jpg",
 ];
 

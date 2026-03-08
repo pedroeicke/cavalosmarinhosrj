@@ -8,11 +8,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const IMAGES = [
   { src: "/DSCN6122.png" },
   { src: "/DSC09607.JPG" },
-  { src: "/DSCN9364.JPG" },
-  { src: "/DSCN8881.JPG" },
-  { src: "/DSCN3640.JPG" },
-  { src: "/DSC07166.png" },
-  { src: "/DSCN7406.png" },
+  { src: "/Búzios (2).JPG" },
+  { src: "/Experimento Hreidi Tubastraea Ago 18 (8).JPG" },
+  { src: "/Araruama.JPG" },
+  { src: "/cavmar fernandes.JPG" },
+  { src: "/DSCN2718 - Maik da Hora.JPG" },
 ];
 
 /* position of each image in the grid (absolute, relative to center) */
