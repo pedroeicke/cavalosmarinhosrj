@@ -1,0 +1,246 @@
+/* ─── Hero ───────────────────────────────────────────────────── */
+.heroBigtitle {
+    margin: 20px;
+    height: auto;
+    position: relative;
+    border-radius: 30px;
+    padding: 128px 20px 30px 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .heroBigtitle {
+        margin: 0 0 20px;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .heroBigtitle {
+        padding: 80px 30px 30px;
+        min-height: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .heroBigtitle {
+        padding: 80px 15px 30px;
+    }
+}
+
+/* ─── Background ─────────────────────────────────────────────── */
+.heroBigtitleBg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+    .heroBigtitleBg {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.heroBigtitleBg img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* ─── Content ────────────────────────────────────────────────── */
+.heroBigtitleContent {
+    max-width: 1880px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.heroBigtitleContent h1 {
+    font-size: 8.33vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px auto 60px;
+    width: 88vw;
+    max-width: 1600px;
+    font-weight: 900;
+    font-family: 'GTAmerica-ExtendedBlack', Arial, Helvetica, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 1600px) {
+    .heroBigtitleContent h1 {
+        font-size: 130px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .heroBigtitleContent h1 {
+        font-size: 10vw;
+        width: unset;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .heroBigtitleContent h1 {
+        margin: 40px 0 50px;
+    }
+}
+
+/* ─── Subtitle ───────────────────────────────────────────────── */
+.subtitle {
+    font-size: 24px;
+    line-height: 138%;
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family: 'GTAmerica-Regular', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 480px) {
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .subtitle {
+        margin-bottom: 50px;
+    }
+}
+
+/* ─── Breadcrumb ─────────────────────────────────────────────── */
+.breadcrumb {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    width: 100%;
+    max-width: 1880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    font-size: 14px;
+    color: #fff;
+    transition: opacity 0.4s ease;
+    text-decoration: none;
+    font-family: 'GTAmerica-Regular', Arial, Helvetica, sans-serif;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.6;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* ─── CTA Button ─────────────────────────────────────────────── */
+.ctaButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 34px;
+    background-color: #fff;
+    color: #0c1637;
+    font-size: 18px;
+    font-family: 'GTAmerica-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.ctaButton:hover {
+    background-color: #0c1637;
+    color: #fff;
+}
+
+/* ─── Grid Animation Background ──────────────────────────────── */
+.bgGrid {
+    position: absolute;
+    width: 250vw;
+    /* bleed off screen */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bgRow {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bgImage {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.bgImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.centerRow {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerZoom {
+    width: 800px;
+    height: 500px;
+    position: relative;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1024px) {
+    .centerZoom {
+        width: 80vw;
+        height: 60vh;
+    }
+}
+
+.transiOverlay {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.5;
+}
